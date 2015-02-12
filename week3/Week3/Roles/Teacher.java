@@ -5,10 +5,15 @@ import java.util.*;
 public class Teacher extends Professional {
 
 	protected Collection<Module> teacheson;
-	protected Degree hasa;
+	protected Collection<Degree> hasa;
 	private String classes;
 	private String levelOfEducation;
 
+	public Teacher(String classes, String levelOfEducation){
+	this.classes = classes;
+	this.levelOfEducation = levelOfEducation;
+	
+	}
 	public String getClasses() {
 		return this.classes;
 	}
